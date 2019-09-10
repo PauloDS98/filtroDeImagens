@@ -48,6 +48,9 @@ button{
   height: 30vh;
   top: 22vh;
   left: 4vh;
-  
   padding: 0;
+}
+
+.rodape{
+margin-top: 250px;
 }
