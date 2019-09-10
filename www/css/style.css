@@ -24,6 +24,10 @@ h1{
   font-family: Elephant;
   font-size: 70px;
 }
+h2{
+    font-family: Elephant;
+  font-size: 35px;
+}
 
 button{
   width: 80%;
@@ -37,3 +41,13 @@ button{
   margin-top: 250px;
 }
 
+.sl{
+  position: fixed;
+  background-color: cornsilk;
+  width: 85%;
+  height: 30vh;
+  top: 22vh;
+  left: 4vh;
+  
+  padding: 0;
+}
