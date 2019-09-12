@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    
+    $(".efeito").hide();
+    $(".efeitoNome").hide();
+
+
+
+
 $(document).on("click","#camera",function(){
 
   navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
@@ -6,11 +14,15 @@ $(document).on("click","#camera",function(){
 function onSuccess(imageURI) {
     var image = document.getElementById('imagem');
     image.src = imageURI;
+     $(".efeito").show();
+    $(".efeitoNome").show();
+    $(".foto").hide();
 }
 
 function onFail(message) {
-    alert('Failed because: ' + message);
+    alert('falha por causa: ' + message);
 }
 
-})
+  })
 
+})
