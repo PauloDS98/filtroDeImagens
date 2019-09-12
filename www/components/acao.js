@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    
-    $(".efeito").hide();
-    $(".efeitoNome").hide();
+    $(".rodapes").hide();
+    //$(".efeito").hide();
+    //$(".efeitoNome").hide();
 
 
 
@@ -14,9 +14,9 @@ $(document).on("click","#camera",function(){
 function onSuccess(imageURI) {
     var image = document.getElementById('imagem');
     image.src = imageURI;
-     $(".efeito").show();
-    $(".efeitoNome").show();
+    $(".rodapes").show();
     $(".foto").hide();
+    
 }
 
 function onFail(message) {
