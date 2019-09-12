@@ -32,4 +32,22 @@ function onFail(message) {
 
   })
 
+  $(document).on("change","#saturacao",function(){
+
+   $("#imagem").css("filter", "saturate("+ $(this).val() + "%)");
+
+  })
+
+  $(document).on("change","#escala_Cinza",function(){
+
+   $("#imagem").css("filter", "grayscale("+ $(this).val() + "%)");
+
+  })
+
+  $(document).on("change","#desfoque",function(){
+
+   $("#imagem").css("filter", "blur("+ $(this).val() + "px)");
+
+  })
+
 })
