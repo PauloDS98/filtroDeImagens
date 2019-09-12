@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    
+    $(".efeito").hide();
+    $(".efeitoNome").hide();
+
+
+
+
 $(document).on("click","#camera",function(){
 
   navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
@@ -12,5 +20,6 @@ function onFail(message) {
     alert('Failed because: ' + message);
 }
 
-})
+  })
 
+})
