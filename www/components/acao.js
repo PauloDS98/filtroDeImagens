@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".rodapes").hide();
+    $(".rodapes").show();
     
     //$(".efeito").hide();
     //$(".efeitoNome").hide();
@@ -23,6 +23,12 @@ function onSuccess(imageURI) {
 function onFail(message) {
     alert('falha por causa: ' + message);
 }
+
+  })
+
+  $(document).on("change","#opacidade",function(){
+
+   $("#imagem").css("filter", "opacity("+ $(this).val() + "%)");
 
   })
 
