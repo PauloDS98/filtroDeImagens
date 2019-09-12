@@ -4,7 +4,7 @@ $(document).on("click","#camera",function(){
     destinationType: Camera.DestinationType.FILE_URI });
 
 function onSuccess(imageURI) {
-    var image = document.getElementById('foto');
+    var image = document.getElementById('imagem');
     image.src = imageURI;
 }
 
