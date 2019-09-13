@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".rodapes").show();
+    $(".rodapes").hide();
     
     //$(".efeito").hide();
     //$(".efeitoNome").hide();
