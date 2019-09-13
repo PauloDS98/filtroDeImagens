@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".rodapes").hide();
+    $(".rodapes").show();
     
     //$(".efeito").hide();
     //$(".efeitoNome").hide();
@@ -23,6 +23,30 @@ function onSuccess(imageURI) {
 function onFail(message) {
     alert('falha por causa: ' + message);
 }
+
+  })
+
+  $(document).on("change","#opacidade",function(){
+
+   $("#imagem").css("filter", "opacity("+ $(this).val() + "%)");
+
+  })
+
+  $(document).on("change","#saturacao",function(){
+
+   $("#imagem").css("filter", "saturate("+ $(this).val() + "%)");
+
+  })
+
+  $(document).on("change","#escala_Cinza",function(){
+
+   $("#imagem").css("filter", "grayscale("+ $(this).val() + "%)");
+
+  })
+
+  $(document).on("change","#desfoque",function(){
+
+   $("#imagem").css("filter", "blur("+ $(this).val() + "px)");
 
   })
 
